@@ -10,7 +10,7 @@ export default function ContactSection() {
       <h2 className="text-3xl font-bold text-center mb-10">Contact Us</h2>
 
       {/* Main container with light blue background, rounded corners, padding, and responsive grid */}
-      <div className="bg-[#e9f1f7] rounded-2xl p-4 md:p-10 lg:p-20 w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-16">
+      <div className="bg-[#E6EDF3] rounded-2xl p-4 md:p-10 lg:p-20 w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-16">
 
         {/* Left Side Start */}
         <div className="flex flex-col gap-6">

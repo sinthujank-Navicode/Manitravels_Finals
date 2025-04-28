@@ -8,7 +8,7 @@ export default function Footer() {
             <p className="mt-2 text-gray-600">
               We provide reliable travel services including flights, visas, hotels, and more to make your journey safe, smooth, and memorable.
             </p>
-            <div className="flex gap-4 mt-4 text-3xl">
+            <div className="flex gap-4 mt-4 text-2xl">
               <a href="#" aria-label="Facebook"><i className="fab fa-facebook"></i></a>
               <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
               <a href="#" aria-label="YouTube"><i className="fab fa-youtube"></i></a>

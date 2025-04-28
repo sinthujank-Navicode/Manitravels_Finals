@@ -54,9 +54,9 @@ export default function Services() {
             {services.map((service, index) => (
               <div
                 key={index} // Add a key prop here
-                className="bg-[#d8e6ef] md:w-[250px] w-[300px]  rounded-3xl shadow-sm flex-shrink-0 transform transition-transform duration-200 "
+                className="bg-[#E6EDF3] w-[250px]  rounded-3xl shadow-sm flex-shrink-0 transform transition-transform duration-200 "
               >
-                <div className="bg-[#739bc2] p-6 text-white flex flex-col items-center justify-center min-h-[160px] rounded-t-3xl">
+                <div className="bg-[#6E95BE] p-6 text-white flex flex-col items-center justify-center min-h-[160px] rounded-t-3xl">
                   <div className="text-4xl mb-4">🌐</div>
                   <h3 className="font-semibold text-center">{service.title}</h3>
                 </div>
