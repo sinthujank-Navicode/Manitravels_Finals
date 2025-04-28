@@ -4,7 +4,7 @@ import { MapPin, Phone, Mail, PhoneCall } from "lucide-react";
 export default function ContactSection() {
   return (
     // Outer section with padding top/bottom and left/right, white background
-    <section className="py-5 px-1 md:px-6 bg-white overflow-hidden">
+    <section className="py-5 px-1 md:px-6 bg-white overflow-hidden" id="contact">
       
       {/* Heading for Contact Us, centered */}
       <h2 className="text-3xl font-bold text-center mb-10">Contact Us</h2>

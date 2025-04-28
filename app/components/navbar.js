@@ -80,9 +80,12 @@ const Navbar = () => {
         <span className="bg-white shadow-sm px-5 py-[14px] rounded-2xl">
           {languageDropdown}
         </span>
+        <a href="#contact">
+
         <button className="bg-white shadow-sm text-black px-9 py-[13px] rounded-2xl">
           Contact
         </button>
+        </a>
       </div>
 
       {/* Mobile Menu Button */}
@@ -108,9 +111,13 @@ const Navbar = () => {
           {/* Wrap dropdown in relative div for mobile */}
           <div className="relative">{languageDropdown}</div>
 
-          <button className="bg-black text-white px-4 py-2 rounded-2xl">
-            Contact
-          </button>
+          <a
+  href="#contact"
+  className="bg-black text-white px-4 py-2 rounded-2xl inline-block text-center"
+>
+  Contact
+</a>
+
         </div>
       )}
     </nav>
