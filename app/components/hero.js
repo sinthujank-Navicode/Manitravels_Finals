@@ -19,16 +19,18 @@ export default function Section1() {
 
         
      {/* First Box - Text Section */}
-     <div className="flex flex-col justify-center items-center text-center z-[40] bg-white bg-opacity-20 p-6 md:p-12 w-full md:w-[50%] min-h-[600px] 2xl:min-h-[750px] relative md:rounded-l-3xl">
+     <div className="flex flex-col justify-center items-start text-start z-[40] bg-white bg-opacity-20 p-6 md:p-12 w-full md:w-[50%] min-h-[600px] 2xl:min-h-[750px] relative md:rounded-l-3xl">
      {/* Small Paragraph */}
-  <p className="text-md text-gray-800">
-    __ As an independent entity,<br /> we provide supportive and neutral<br /> governance to our coalition
-  </p>
-
-  {/* Big Heading */}
-  <h1 className="text-5xl md:text-7xl font-extrabold">
-    TRAVEL<br /> AROUND <br />THE WORLD
-  </h1>
+     <p className="text-md text-gray-800">
+          __ As an independent entity,<br /> we provide supportive and neutral<br /> governance to our coalition
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1 className="text-5xl md:text-7xl font-extrabold mt-10">
+          TRAVEL<br /> AROUND <br />THE WORLD
+        </h1>
 </div>
 
      {/* Overlay Image (only Desktop) */}
