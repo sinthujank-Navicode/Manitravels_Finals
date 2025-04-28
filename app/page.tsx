@@ -6,7 +6,7 @@ import ContactUs from "./components/Sections/ContactUs";
 export default function Home() {
   return (
     <div className="relative">
-      <div id="home" className="relative overflow-hidden">
+      <div id="home" className="relative overflow-hidden md:mb-0 mb-7">
         <Hero />
       </div>
       <div id="service " className="m-2 md:m-0 md:mt-12 ">
