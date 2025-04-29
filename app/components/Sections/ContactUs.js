@@ -51,7 +51,7 @@ export default function ContactSection() {
           <div className=" relative flex flex-col md:flex-row justify-around gap-6 mb-6 ">
             
             {/* Email Section (moved slightly left) */}
-            <div className="relative flex items-center gap-2 md:mr-[4.5rem] ">
+            <div className="relative flex items-center gap-3 md:mr-[4.5rem] ">
               {/* Mail Icon (slightly more to the left) */}
               <Mail className="text-black w-8 h-8 " />
               {/* Email Text */}
