@@ -43,18 +43,25 @@ export default function Services() {
     ];
   
     return (
-      <section className="bg-white  px-6 md:py-12 py-4" id="service">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
-          Our Services
-        </h2>
-  
-        {/* Scrollable Row with Hidden Scrollbars */}
-        <div className="overflow-x-auto overscroll-x-contain [scrollbar-width:none] [-ms-overflow-style:none] no-scrollbar mb-4 mt-4 inset-0">
-          <div className="flex gap-4 w-[2000px]">
+      <section className="bg-white md:px-5 px-1 md:py-12 py-4 relative " id="service ">
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+        Our Services
+      </h2>
+    
+      <div className="relative">
+        {/* Left Fade Effect */}
+        <div className="absolute left-0 top-0 h-full w-2 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
+    
+        {/* Right Fade Effect */}
+        <div className="absolute right-0 top-0 h-full w-2 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
+    
+        {/* Scrollable Row */}
+        <div className="overflow-x-auto no-scrollbar relative z-10 ">
+          <div className="inline-flex gap-4 px-1">
             {services.map((service, index) => (
               <div
-                key={index} // Add a key prop here
-                className="bg-[#E6EDF3] w-[250px]  rounded-3xl shadow-sm flex-shrink-0 transform transition-transform duration-200 "
+                key={index}
+                className="bg-[#E6EDF3] w-[250px] rounded-3xl flex-shrink-0 transition-transform duration-200"
               >
                 <div className="bg-[#6E95BE] p-6 text-white flex flex-col items-center justify-center min-h-[160px] rounded-t-3xl">
                   <div className="text-4xl mb-4">🌐</div>
@@ -72,6 +79,10 @@ export default function Services() {
             ))}
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    
+
+    
     );
   }
