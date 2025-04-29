@@ -33,7 +33,7 @@ export default function ContactSection() {
             </div>
 
             {/* Phone Section */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 md:ml-4">
               {/* Phone Icon */}
               <Phone className="text-black w-8 h-8" />
               {/* Phone Text */}
@@ -48,12 +48,12 @@ export default function ContactSection() {
           </div>
 
           {/* Second Row: Email and Landline Phone */}
-          <div className="flex flex-col md:flex-row justify-around gap-6 mb-6">
+          <div className=" relative flex flex-col md:flex-row justify-around gap-6 mb-6 ">
             
             {/* Email Section (moved slightly left) */}
-            <div className="flex items-center gap-2 -ml">
+            <div className="relative flex items-center gap-2 md:mr-[4.5rem] ">
               {/* Mail Icon (slightly more to the left) */}
-              <Mail className="text-black w-8 h-8 -ml-" />
+              <Mail className="text-black w-8 h-8 " />
               {/* Email Text */}
               <div>
                 <p className="font-semibold">commani187@gmail.com</p>
@@ -65,9 +65,9 @@ export default function ContactSection() {
             </div>
 
             {/* Landline Phone Section (moved slightly right) */}
-            <div className="flex items-center gap-2 ml-">
+            <div className="flex items-center gap-2  md:ml-[-1rem]">
               {/* Phone Call Icon */}
-              <PhoneCall className="text-black w-8 h-8" />
+              <PhoneCall className="text-black w-8 h-8 mr-2" />
               {/* Landline Text */}
               <div>
                 <p className="font-semibold">011 239 144 6</p>
