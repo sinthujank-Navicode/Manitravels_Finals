@@ -19,7 +19,7 @@ const montserrat = Montserrat({
 
 export default function Section1() {
   return (
-    <section className={`${bebasNeue.variable} ${montserrat.variable} h-[90vh] md:mx-6 mx-3 flex flex-col md:flex-row items-center justify-between p-4 md:p-8 lg:p-12 relative overflow-hidden rounded-2xl`}>
+    <section className={`${bebasNeue.variable} ${montserrat.variable} h-[89vh] md:mx-6 mx-3 flex flex-col md:flex-row items-center justify-between p-4 md:p-8 lg:p-12 relative overflow-hidden rounded-2xl`}>
       {/* Background Zoom Animation */}
       <motion.div
         className="absolute top-0 left-0 w-full h-full z-[-1] bg-cover bg-center rounded-2xl"
