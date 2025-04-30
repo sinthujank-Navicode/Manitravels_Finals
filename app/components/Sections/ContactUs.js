@@ -1,4 +1,6 @@
-import { MapPin, Phone, Mail, PhoneCall } from "lucide-react";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { BsFillTelephoneFill } from 'react-icons/bs';
+
 
 // Export the ContactSection component
 export default function ContactSection() {
@@ -15,69 +17,55 @@ export default function ContactSection() {
         {/* Left Side Start */}
         <div className="flex flex-col gap-6">
           
-          {/* First Row: Address and Phone (responsive flex direction) */}
-          <div className="flex flex-col md:flex-row justify-around gap-6 mb-6">
-            
-            {/* Address Section */}
-            <div className="flex items-center gap-2">
-              {/* Address Icon */}
-              <MapPin className="text-black w-8 h-8" />
-              {/* Address Text */}
-              <div>
-                <p className="font-semibold">NO 312 Sea Street, Colombo - 11</p>
-                {/* Link to open in map */}
-                <a href="#" className="text-blue-500 text-sm hover:underline">
-                  Open in map
-                </a>
-              </div>
-            </div>
-
-            {/* Phone Section */}
-            <div className="flex items-center gap-2 md:ml-4">
-              {/* Phone Icon */}
-              <Phone className="text-black w-8 h-8" />
-              {/* Phone Text */}
-              <div>
-                <p className="font-semibold">+94 774 725 978</p>
-                {/* Call now link */}
-                <a href="tel:+94774725978" className="text-blue-500 text-sm hover:underline">
-                  Call now
-                </a>
-              </div>
-            </div>
+        
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-10">
+        
+        {/* Address */}
+        <div className="flex items-start gap-4">
+          <FaMapMarkerAlt className="text-3xl text-black shrink-0" />
+          <div>
+            <p className="text-[15px] font-medium leading-tight">NO 312 Sea Street, Colombo - 11</p>
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-[#3a5fb4] text-[14px] font-semibold hover:underline">
+              Open in map
+            </a>
           </div>
+        </div>
 
-          {/* Second Row: Email and Landline Phone */}
-          <div className=" relative flex flex-col md:flex-row justify-around gap-6 mb-6 ">
-            
-            {/* Email Section (moved slightly left) */}
-            <div className="relative flex items-center gap-3 md:mr-[4.5rem] ">
-              {/* Mail Icon (slightly more to the left) */}
-              <Mail className="text-black w-8 h-8 " />
-              {/* Email Text */}
-              <div>
-                <p className="font-semibold">commani187@gmail.com</p>
-                {/* Mailto link */}
-                <a href="mailto:commani187@gmail.com" className="text-blue-500 text-sm hover:underline">
-                  Send mail
-                </a>
-              </div>
-            </div>
-
-            {/* Landline Phone Section (moved slightly right) */}
-            <div className="flex items-center gap-2  md:ml-[-1rem]">
-              {/* Phone Call Icon */}
-              <PhoneCall className="text-black w-8 h-8 mr-2" />
-              {/* Landline Text */}
-              <div>
-                <p className="font-semibold">011 239 144 6</p>
-                {/* Call now link */}
-                <a href="tel:0112391446" className="text-blue-500 text-sm hover:underline">
-                  Call now
-                </a>
-              </div>
-            </div>
+        {/* Mobile Phone */}
+        <div className="flex items-start gap-4">
+          <FaPhoneAlt className="text-3xl text-black shrink-0" />
+          <div>
+            <p className="text-[15px] font-medium leading-tight">+94 774 725 978</p>
+            <a href="tel:+94774725978" className="text-[#3a5fb4] text-[14px] font-semibold hover:underline">
+              Call now
+            </a>
           </div>
+        </div>
+
+        {/* Email */}
+        <div className="flex items-start gap-4">
+          <FaEnvelope className="text-3xl text-black shrink-0" />
+          <div>
+            <p className="text-[15px] font-medium leading-tight">commani187@gmail.com</p>
+            <a href="mailto:commani187@gmail.com" className="text-[#3a5fb4] text-[14px] font-semibold hover:underline">
+              Send mail
+            </a>
+          </div>
+        </div>
+
+        {/* Landline */}
+        <div className="flex items-start gap-4">
+          <BsFillTelephoneFill className="text-3xl text-black shrink-0" /> 
+          <div>
+            <p className="text-[15px] font-medium leading-tight">011 239 144 6</p>
+            <a href="tel:0112391446" className="text-[#3a5fb4] text-[14px] font-semibold hover:underline">
+              Call now
+            </a>
+          </div>
+        </div>
+
+      </div>
+   
 
           {/* Embedded Google Map */}
           <div className="overflow-hidden rounded-lg mt-6">

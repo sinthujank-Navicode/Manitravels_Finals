@@ -1,10 +1,11 @@
+
 "use client";
 import { motion } from "framer-motion";
 import { Bebas_Neue, Montserrat } from 'next/font/google';
 
 // Initialize the fonts
 const bebasNeue = Bebas_Neue({
-  weight: ['400'], // Bebas Neue typically only has one weight
+  weight: ['400'],
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-bebas-neue',
@@ -19,7 +20,7 @@ const montserrat = Montserrat({
 
 export default function Section1() {
   return (
-    <section className={`${bebasNeue.variable} ${montserrat.variable} h-[89vh] md:mx-6 mx-3 flex flex-col md:flex-row items-center justify-between p-4 md:p-8 lg:p-12 relative overflow-hidden rounded-2xl`}>
+    <section className={`${bebasNeue.variable} ${montserrat.variable} min-h-[calc(100vh-50px)] md:mx-6 mx-3 flex flex-col md:flex-row items-center justify-between p-4 md:p-8 lg:p-12 relative overflow-hidden rounded-2xl`}>
       {/* Background Zoom Animation */}
       <motion.div
         className="absolute top-0 left-0 w-full h-full z-[-1] bg-cover bg-center rounded-2xl"
@@ -34,16 +35,13 @@ export default function Section1() {
       />
       
       {/* First Box - Text Section */}
-      <div className="flex flex-col justify-center items-start text-start z-[40] bg-white bg-opacity-20 p-6 md:p-12 w-full md:w-[50%]  md:min-h-[600px] min-h-[560px]  2xl:min-h-[750px] relative md:rounded-l-3xl">
+      <div className="flex flex-col justify-center items-start text-start z-[40] bg-white bg-opacity-20 p-6 md:p-12 w-full md:w-[50%] md:min-h-[600px] min-h-[560px] 2xl:min-h-[750px] relative md:rounded-l-3xl">
         {/* Small Paragraph */}
         <p className="text-md text-gray-800 font-sans">
           __ As an independent entity,<br /> we provide supportive and neutral<br /> governance to our coalition
         </p>
         <br />
-        <br />
-        <br />
-        <br />
-        <h1 className="text-5xl md:text-7xl font-normal mt-10 tracking-wider" style={{ fontFamily: 'var(--font-bebas-neue)' }}>
+        <h1 className="text-5xl md:text-8xl font-normal mt-10 tracking-wider" style={{ fontFamily: 'var(--font-bebas-neue)' }}>
           TRAVEL<br /> AROUND <br />THE WORLD
         </h1>
       </div>
